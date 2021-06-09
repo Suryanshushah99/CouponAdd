@@ -75,4 +75,4 @@ def show_coupon(id):
 port = int(os.environ.get('PORT', 33507))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port)
