@@ -17,7 +17,7 @@ connection=psycopg2.connect(url)
 
 
 # home
-@app.route("/")
+@app.route("/",methods=['GET'])
 def home():
 	return "Coupon Add"
 
@@ -42,7 +42,7 @@ def add_coupon():
         return str(e)
 
 # show all coupon
-@app.route('/showcoupon')
+@app.route('/showcoupon',methods=['GET'])
 def show_coupons():
     try:
         with connection:
