@@ -1,1 +1,1 @@
-web: gunicorn CouponAdd.py:app
+web: gunicorn app:app
